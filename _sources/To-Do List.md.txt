@@ -1,0 +1,7 @@
+Engine Tasks to-do
+
+ - [x] Finish [[Game Engine Research Feature]]
+	 - [ ] Documentation for this^ (namely [[ScriptDoc/Classes/Animator|Animator]])
+ - [ ] Controller Support
+ - [ ] Advanced audio features (maybe)
+ - [ ] Optimize DrawPixel()

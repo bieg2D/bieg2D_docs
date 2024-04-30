@@ -1,0 +1,4 @@
+Really just a vector<string> of image names, with some metadata
+
+member variables:
+vector<string> anim_frames

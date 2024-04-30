@@ -1,0 +1,19 @@
+###### Required
+`frames`
+An array of image names, representing frames of animation.
+###### Optional
+`frames_per_second`
+May set a specific framerate for this animation.
+If left blank, will play at current framerate of the [[ScriptDoc/Classes/Animator|Animator]].
+## Example
+```json
+// resources/animations/idle.animation
+{
+	"frames_per_second": 10,
+	"frames": [
+		"test_1",//refers to resources/images/idle_1.png
+		"test_2",
+		"test_3"
+	]
+}
+```

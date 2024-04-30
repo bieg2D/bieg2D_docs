@@ -1,0 +1,40 @@
+
+
+## Example
+```json
+{
+	"actors": [
+		{
+			"name": "Player",
+			"components": {
+				"1": {
+					"type": "Rigidbody",
+					"x": -1,
+				},
+				"2": {
+					"type": "SpriteRenderer",
+					"sprite": "player",
+					"scale": 0.5
+				}
+			}
+		},
+		{
+			"name": "Enemy",
+			"components": {
+				"1": {
+					"type": "Rigidbody",
+					"body_type": "static",
+					"has_collider": false,
+					"has_trigger": true
+				},
+				"2": {
+					"type": "SpriteRenderer",
+					"sprite": "player",
+					"sorting_order": -5,
+					"scale": 2.0
+				}
+			}
+		}
+	]
+}
+```

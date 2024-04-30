@@ -1,0 +1,42 @@
+
+## Example
+```json
+{
+	"name": "Starship_Template",
+	"components": {
+		"RB": {
+			"type": "Rigidbody",
+			"body_type": "dynamic",
+			"has_collider": false,
+			"has_trigger": true,
+			"gravity_scale": 0.0
+		},
+		"Image": {
+			"type": "SpriteRenderer",
+			"sprite": "laser",
+			"scale": 0.5
+		}
+	}
+}
+```
+#### ... in a [[ScriptDoc/Config/File Formats/Scenes|.scene]] file ...
+
+```json
+{
+	"actors": [
+		{
+			"name": "Player",
+			"template": "ship",
+			"components": {
+				"RB": { // x value override on 
+					"x": -1
+				},
+				"Controls": {
+					"type": "KeyboardInput",
+					"speed": 3
+				}
+			}
+		}
+	]
+}
+```

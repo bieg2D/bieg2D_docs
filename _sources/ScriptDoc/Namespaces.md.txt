@@ -1,0 +1,15 @@
+Below is a list of all built-in engine namespaces available to Lua scripting.
+
+| [[Application]]                               | Interface to OS Application             |
+| --------------------------------------------- | --------------------------------------- |
+| [[Debug]]                                     | Methods to ease debugging               |
+| [[ScriptDoc/Namespaces/Actor\|Actor]]         | Static methods for Actor management<br> |
+| [[Input]]                                     | Interface into the Input system         |
+| [[ScriptDoc/Namespaces/Image\|Image]]         | Interface for image drawing             |
+| [[Text]]                                      | Interface for drawing text              |
+| [[Audio]]                                     | Interface for playing audio             |
+| [[Camera]]                                    |                                         |
+| [[Scene]]                                     |                                         |
+| [[Physics]]                                   |                                         |
+| [[Event]]                                     |                                         |
+| [[ScriptDoc/Namespaces/Animation\|Animation]] |                                         |

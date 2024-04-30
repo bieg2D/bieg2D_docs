@@ -1,0 +1,11 @@
+`x_resolution` (int)
+`y_resolution` (int)
+x, y dimensions of the game window.
+
+`clear_color_r` (int) (0-255)
+`clear_color_g` (int) (0-255)
+`clear_color_b` (int) (0-255)
+rgb value that specifies the background color of the game window.
+
+`zoom_factor` (float)
+Zoom factor of the camera.

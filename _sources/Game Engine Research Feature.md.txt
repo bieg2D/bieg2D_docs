@@ -1,0 +1,17 @@
+
+## Current Task: [[ScriptDoc/Classes/Animator|Animator]]
+
+C++ - implemented component that reads [[Animations|.animation]] files and keeps track of cycling sprites at user-specified framerates
+
+Task Progress
+- [x] Reading Animation File Format
+- [x] Basic C++ Animator Component (can cycle images)
+- [x] Variable Framerate Support
+- [x] Play Animation (Interrupt current animation)
+- [x] Default Animation (looping animation that plays when nothing else is playing)
+- [x] Callbacks using EventBus (on animation finished)
+- [ ] Ability to queue animation to start on next animation frame (to keep framerate consistent)
+- [x] Bugfixing
+- [x] Developer Experience Enhancement (functions like GetFPS and GetDefaultAnimation to check values in Lua, customized pivot point per animation)
+- [x] (Stretch Goal) Hold frame support
+- [ ] (Stretch Goal) C++ Animation Renderer Component (decided not to do)

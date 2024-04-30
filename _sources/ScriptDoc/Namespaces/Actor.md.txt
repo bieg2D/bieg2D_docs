@@ -1,0 +1,51 @@
+namespace Actor
+
+# Methods:
+## Actor.Find
+#### Declaration
+`static actor Actor.Find(name)`
+
+Returns first actor with name `name`. Actors are sorted by the order in which they were loaded.
+If no actors with matching name are loaded, returns nil.
+```lua
+-- finds first actor with given name and adds upwards velocity
+bounce_actor = function(name)
+	local found_actor = Actor.Find(name)
+	local rb = found_actor.GetComponent("Rigidbody")
+	rb.SetVelocity(Vector2(0, -1))
+end
+```
+## Actor.FindAll
+#### Declaration
+`static table Actor.FindAll(name)`
+
+Returns a table of actors with name `name`, which can be indexed with `ipairs`. Actors are sorted by the order in which they were loaded.
+If no actors with matching name are loaded, returns nil.
+```lua
+bounce_all = function(name)
+	local found_actors = Actor.FindAll(name)
+	for index, value in ipairs(found_actors) do
+		value.GetComponent("Rigidbody").SetVelocity(Vector2(0, -1))
+	end
+end
+```
+
+## Actor.Instantiate
+#### Declaration
+`static actor Actor.Instantiate(template_name)`
+
+Instantiates a new actor with attributes specified in the template located at `actor_templates/[template_name].template`, and returns a reference to it.
+```lua
+--TODO: Write this
+```
+
+## Actor.Destroy
+#### Declaration
+`static void Actor.Destroy(actor)`
+
+Queues `actor` for deletion, which will occur at the end of the frame. Update lifecycle functions on the actor's components will no longer be called automatically.
+References to the actor will remain valid throughout this frame, and its components may still be accessed.
+OnDestroy() will be called on the actor's components after LateUpdate cycle at the end of the frame.
+```lua
+--TODO: Write this
+```

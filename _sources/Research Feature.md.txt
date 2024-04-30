@@ -1,0 +1,16 @@
+#### Controller Support
+
+needs support for:
+Multiple Device Management (maybe a static vector?)
+DualShock/Sense, Xbox
+
+#### Animator system -- in progress
+new component and JSON file type
+Needs support for:
+[[Animator]]
+[[Animation]]
+
+#### Post Processing
+Could function as an additional render queue for final frame effects, probably just a few simple options
+[starting point](https://www.reddit.com/r/gamedev/comments/v0b8o4/is_there_a_way_to_create_bloom_effects_in_sdl2/)
+

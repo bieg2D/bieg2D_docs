@@ -1,10 +1,13 @@
-# Welcome to Lumache's documentation!
+![[images/bieg_logo_light_small.png]]
+Welcome to bieg2D!
+This is a simple C++ - powered engine, designed for developer ease of use. It's free, open-source, and works on Windows, macOS, and Linux!
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers that
-creates recipes mixing random ingredients.  It pulls data from the `Open Food
-Facts database and offers a *simple* and
-*intuitive* API.
+The engine is licensed under the zlib/libpng license, which means it's free to use for personal and commercial purposes. No limitations!
 
-.. note::
+[[Download Here!]]
 
-   This project is under active development.
+[[ScriptDoc/Scripting Documentation|Scripting Documentation]]
+[[Get Started]]
+[[Engine Source]]
+
+[[Sketchbook]]

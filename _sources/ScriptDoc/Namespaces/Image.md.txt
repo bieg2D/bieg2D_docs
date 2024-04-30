@@ -1,0 +1,64 @@
+namespace Image
+
+# Methods:
+## Image.Preload
+#### Declaration
+`static void Image.Preload(name)`
+
+loads .png file located at `resources/images/name.png` into memory. If an image has not been manually preloaded, 
+```lua
+OnStart = function(self)
+	Image.Preload(self.sprite)
+end
+
+OnUpdate = function(self) -- doesn't need to load on draw call
+	Image.Draw(self.sprite, self.x, self.y)
+end
+```
+## Image.PreloadAll
+#### Declaration
+`static void Image.PreloadAll()`
+
+Loads all .png files located in the directory `resources/images/` into memory using Preload().
+```lua
+OnStart = function(self)
+	Image.PreloadAll()
+end
+
+OnUpdate = function(self) -- doesn't need to load on either draw call
+	Image.Draw(self.sprite, self.x, self.y)
+	Image.DrawUI(self.heart, 20, 20)
+end
+```
+## Image.Unload
+#### Declaration
+`static void Image.Unload(name)`
+
+Unloads the image located at `resources/images/name.png`, freeing its memory. The image must be re loaded to be used again.
+```lua
+sprite = "player"
+
+OnUpdate = function(self)
+	-- loads player.png
+	Image.Draw(self.sprite, self.x, self.y)
+	Image.Unload(self.sprite)
+	-- loads player.png again
+	Image.DrawUI(self.sprite, 0, 0)
+end
+```
+## Image.DrawUI
+#### Declaration
+`static void Image.DrawUI(name, x, y)`
+
+Draws
+Loads the image, if it is not currently loaded.
+```lua
+OnStart = function(self)
+	Image.PreloadAll()
+end
+
+OnUpdate = function(self) -- doesn't need to load on either draw call
+	Image.Draw(self.sprite, self.x, self.y)
+	Image.DrawUI(self.heart, 20, 20)
+end
+```

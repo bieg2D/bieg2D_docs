@@ -1,0 +1,4 @@
+[[ScriptDoc/Lifecycle Functions/OnStart|OnStart]]
+[[ScriptDoc/Lifecycle Functions/OnUpdate|OnUpdate]]
+[[ScriptDoc/Lifecycle Functions/OnLateUpdate|OnLateUpdate]]
+[[ScriptDoc/Lifecycle Functions/OnDestroy|OnDestroy]]
