@@ -2,7 +2,7 @@ namespace Actor
 
 # Methods:
 ## Actor.Find
-#### Declaration
+### Declaration
 `static actor Actor.Find(name)`
 
 Returns first actor with name `name`. Actors are sorted by the order in which they were loaded.
@@ -16,7 +16,7 @@ bounce_actor = function(name)
 end
 ```
 ## Actor.FindAll
-#### Declaration
+### Declaration
 `static table Actor.FindAll(name)`
 
 Returns a table of actors with name `name`, which can be indexed with `ipairs`. Actors are sorted by the order in which they were loaded.
@@ -31,7 +31,7 @@ end
 ```
 
 ## Actor.Instantiate
-#### Declaration
+### Declaration
 `static actor Actor.Instantiate(template_name)`
 
 Instantiates a new actor with attributes specified in the template located at `actor_templates/[template_name].template`, and returns a reference to it.
@@ -40,7 +40,7 @@ Instantiates a new actor with attributes specified in the template located at `a
 ```
 
 ## Actor.Destroy
-#### Declaration
+### Declaration
 `static void Actor.Destroy(actor)`
 
 Queues `actor` for deletion, which will occur at the end of the frame. Update lifecycle functions on the actor's components will no longer be called automatically.

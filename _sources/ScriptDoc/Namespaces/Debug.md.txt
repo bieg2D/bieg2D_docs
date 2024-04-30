@@ -2,7 +2,7 @@ namespace Debug
 
 # Methods:
 ## Debug.Log
-#### Declaration
+### Declaration
 `static void Debug.Log(string)`
 
 Writes a message to standard output.
@@ -12,7 +12,7 @@ speak_message = function(message)
 end
 ```
 ## Debug.LogError
-#### Declaration
+### Declaration
 `static void Debug.LogError(string)`
 
 Writes a message to standard error output

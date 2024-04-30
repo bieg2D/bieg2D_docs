@@ -1,3 +1,4 @@
+# Properties
 ###### Required
 `frames`
 An array of image names, representing frames of animation.
@@ -5,7 +6,7 @@ An array of image names, representing frames of animation.
 `frames_per_second`
 May set a specific framerate for this animation.
 If left blank, will play at current framerate of the [[ScriptDoc/Classes/Animator|Animator]].
-## Example
+# Example
 ```json
 // resources/animations/idle.animation
 {

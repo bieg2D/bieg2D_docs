@@ -2,7 +2,7 @@ namespace Image
 
 # Methods:
 ## Image.Preload
-#### Declaration
+### Declaration
 `static void Image.Preload(name)`
 
 loads .png file located at `resources/images/name.png` into memory. If an image has not been manually preloaded, 
@@ -16,7 +16,7 @@ OnUpdate = function(self) -- doesn't need to load on draw call
 end
 ```
 ## Image.PreloadAll
-#### Declaration
+### Declaration
 `static void Image.PreloadAll()`
 
 Loads all .png files located in the directory `resources/images/` into memory using Preload().
@@ -31,7 +31,7 @@ OnUpdate = function(self) -- doesn't need to load on either draw call
 end
 ```
 ## Image.Unload
-#### Declaration
+### Declaration
 `static void Image.Unload(name)`
 
 Unloads the image located at `resources/images/name.png`, freeing its memory. The image must be re loaded to be used again.
@@ -47,7 +47,7 @@ OnUpdate = function(self)
 end
 ```
 ## Image.DrawUI
-#### Declaration
+### Declaration
 `static void Image.DrawUI(name, x, y)`
 
 Draws

@@ -2,7 +2,7 @@ namespace Application
 
 # Methods:
 ## Application.Quit
-#### Declaration
+### Declaration
 `static void Application.Quit()`
 
 Quits the game immediately.
@@ -13,7 +13,7 @@ if self.quit_selected then
 end
 ```
 ## Application.Sleep
-#### Declaration
+### Declaration
 `static void Application.Sleep(int milliseconds)`
 
 Suspends the application for a number of milliseconds.
@@ -23,7 +23,7 @@ if self.sleepy_time then
 end
 ```
 ## Application.OpenURL
-#### Declaration
+### Declaration
 `static void Application.OpenURL(string url)`
 
 Opens specified URL in user's default browser.
@@ -33,7 +33,7 @@ if user_destination == self.portfolio then
 end
 ```
 ## Application.GetFrame
-#### Declaration
+### Declaration
 `static int Application.GetFrame()`
 
 Returns the number of frames elapsed since the game launched. (Game begins on frame 0)

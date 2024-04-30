@@ -1,5 +1,5 @@
 
-## Current Task: [[ScriptDoc/Classes/Animator|Animator]]
+# Current Task: [[ScriptDoc/Classes/Animator|Animator]]
 
 C++ - implemented component that reads [[Animations|.animation]] files and keeps track of cycling sprites at user-specified framerates
 

@@ -1,5 +1,5 @@
 
-## Example
+# Example
 ```json
 {
 	"name": "Starship_Template",
@@ -19,7 +19,7 @@
 	}
 }
 ```
-#### ... in a [[ScriptDoc/Config/File Formats/Scenes|.scene]] file ...
+# ... in a [[ScriptDoc/Config/File Formats/Scenes|.scene]] file ...
 
 ```json
 {

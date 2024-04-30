@@ -2,7 +2,7 @@ namespace Animation
 
 # Methods:
 ## Animation.Preload
-#### Declaration
+### Declaration
 `static void Animation.Preload(name)`
 
 loads [[ScriptDoc/Config/File Formats/Animations|.animation]] file located at `resources/animations/name.animation` into memory. This calls [[ScriptDoc/Namespaces/Image|Image.Preload()]] on all animation frames.
@@ -10,7 +10,7 @@ loads [[ScriptDoc/Config/File Formats/Animations|.animation]] file located at `r
 -- TODO: Write this
 ```
 ## Animation.PreloadAll
-#### Declaration
+### Declaration
 `static void Animation.PreloadAll()`
 
 Loads all [[ScriptDoc/Config/File Formats/Animations|.animation]] files located in the directory `resources/animations/` into memory using Preload().
@@ -18,7 +18,7 @@ Loads all [[ScriptDoc/Config/File Formats/Animations|.animation]] files located 
 -- TODO: Write this
 ```
 ## Animation.Unload
-#### Declaration
+### Declaration
 `static void Animation.Unload(name)`
 
 Unloads the [[ScriptDoc/Config/File Formats/Animations|animation]] located at `resources/animations/name.animation`, freeing its memory. This calls [[ScriptDoc/Namespaces/Image|Image.Unload()]] on all animation frames.
