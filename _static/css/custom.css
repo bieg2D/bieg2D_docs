@@ -62,15 +62,16 @@ table {
 }
 
 body {
-  background: #303030;
+  background: #251f27;
   color: #bebebe;
   font-family: "Futura", serif;
   line-height: 1.5;
   font-size: 18px;
 }
 @media screen and (max-width: 880px) {
+  /* for narriw windows and mobile */
   body {
-    background: #303030;
+    background: inherit;
   }
 }
 
@@ -141,7 +142,7 @@ ul ul {
 
 pre {
   font-family: "Inconsolata", monospace;
-  background-color: #3d3d3d;
+  background-color: inherit;
   color: #bebebe;
   padding: 2em;
   margin-bottom: 1em;
@@ -225,7 +226,7 @@ table tbody tr:nth-of-type(odd) code {
 }
 
 #main-content-container, #side-menu-container {
-  background-color: #303030;
+  background-color: inherit;
 }
 
 #main-content {
@@ -338,7 +339,7 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
   font-size: 2em;
   box-sizing: border-box;
   border: none;
-  background-color: #303030;
+  background-color: inherit;
   color: #bebebe;
   font-family: "IBM Plex Sans", serif;
 }
@@ -404,7 +405,7 @@ header #logo-container {
   }
 }
 header #logo-container img {
-  height: 60px;
+  height: 100px;
 }
 header #project-container {
   padding: 0em 2em;

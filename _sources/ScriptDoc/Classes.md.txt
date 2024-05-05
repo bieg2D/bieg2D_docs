@@ -1,3 +1,4 @@
+# Classes
 [[vec2]]
 [[Vector2]]
 [[ScriptDoc/Classes/Actor|Actor]]

@@ -19,6 +19,6 @@ The engine is licensed under the zlib/libpng license, which means it's free to u
 :hidden:
 :titlesonly:
 :caption: Scripting Documentation
-ScriptDoc/scripting_doc.md
 ScriptDoc/file_structure.md
+ScriptDoc/scripting_doc.md
 ```

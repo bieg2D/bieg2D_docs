@@ -2,3 +2,7 @@
 ### [[Lifecycle Functions]]
 ### [[Namespaces]]
 ### [[Classes]]
+
+```{toctree}
+/ScriptDoc/Classes.md
+```
