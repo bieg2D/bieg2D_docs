@@ -1,8 +1,4 @@
-
-# [[File Structure|File Structure]]
-
-# Scripting Documentation
-## Lua Scripting
+# Lua Scripting
 ### [[Lifecycle Functions]]
 ### [[Namespaces]]
 ### [[Classes]]

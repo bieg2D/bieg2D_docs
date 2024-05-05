@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#2D2D2D" />
   
-  <title>bieg2D :: Lua Scripting</title>
+  <title>bieg2D :: File Structure</title>
   
 
   <link rel="icon" type="image/png" sizes="32x32" href="../_static/img/favicon-32x32.png">
@@ -45,17 +45,21 @@
       <div id="main-content-container">
         <div id="main-content" role="main">
           
-  <section id="lua-scripting">
-<h1>Lua Scripting<a class="headerlink" href="#lua-scripting" title="Link to this heading">¶</a></h1>
-<section id="lifecycle-functions">
-<h2>[[Lifecycle Functions]]<a class="headerlink" href="#lifecycle-functions" title="Link to this heading">¶</a></h2>
-</section>
-<section id="namespaces">
-<h2>[[Namespaces]]<a class="headerlink" href="#namespaces" title="Link to this heading">¶</a></h2>
-</section>
-<section id="classes">
-<h2>[[Classes]]<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
-</section>
+  <section id="file-structure">
+<h1>File Structure<a class="headerlink" href="#file-structure" title="Link to this heading">¶</a></h1>
+<p>resources/
+[[ScriptDoc/Config/game.config|game.config]]
+[[ScriptDoc/Config/rendering.config|rendering.config]]
+images/
+[[ScriptDoc/Config/File Formats/Images|<em>.png]]
+component_types/
+*.lua
+scenes/
+[[ScriptDoc/Config/File Formats/Scenes|</em>.scene]]
+actor_templates/
+[[ScriptDoc/Config/File Formats/Templates|<em>.template]]
+animations/
+[[ScriptDoc/Config/File Formats/Animations|</em>.animation]]</p>
 </section>
 
 
@@ -84,8 +88,13 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Scripting Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Lua Scripting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="file_structure.html">File Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting_doc.html">Lua Scripting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scripting_doc.html#lifecycle-functions">[[Lifecycle Functions]]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting_doc.html#namespaces">[[Namespaces]]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting_doc.html#classes">[[Classes]]</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">File Structure</a></li>
 </ul>
 
   
@@ -105,7 +114,7 @@
             
                 <li class="footer-element">
                     
-                        <a href="../_sources/ScriptDoc/scripting_doc.md.txt" rel="nofollow"> source</a>
+                        <a href="../_sources/ScriptDoc/file_structure.md.txt" rel="nofollow"> source</a>
                     
                 </li>
             
