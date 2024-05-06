@@ -1,3 +1,4 @@
+# Animation
 namespace Animation
 
 # Methods:
@@ -5,7 +6,7 @@ namespace Animation
 ### Declaration
 `static void Animation.Preload(name)`
 
-loads [[ScriptDoc/Config/File Formats/Animations|.animation]] file located at `resources/animations/name.animation` into memory. This calls [[ScriptDoc/Namespaces/Image|Image.Preload()]] on all animation frames.
+loads [[ScriptDoc/Config/File Formats/Animations|.animation]] file located at `resources/animations/name.animation` into memory. This calls [[image|Image.Preload()]] on all animation frames.
 ```lua
 -- TODO: Write this
 ```
@@ -21,7 +22,7 @@ Loads all [[ScriptDoc/Config/File Formats/Animations|.animation]] files located 
 ### Declaration
 `static void Animation.Unload(name)`
 
-Unloads the [[ScriptDoc/Config/File Formats/Animations|animation]] located at `resources/animations/name.animation`, freeing its memory. This calls [[ScriptDoc/Namespaces/Image|Image.Unload()]] on all animation frames.
+Unloads the [[ScriptDoc/Config/File Formats/Animations|animation]] located at `resources/animations/name.animation`, freeing its memory. This calls [[image|Image.Unload()]] on all animation frames.
 ```lua
 -- TODO: Write this
 ```

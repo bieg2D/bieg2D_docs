@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#2D2D2D" />
   
-  <title>bieg2D :: Methods:</title>
+  <title>bieg2D :: Animation</title>
   
 
   <link rel="icon" type="image/png" sizes="32x32" href="../../_static/img/favicon-32x32.png">
@@ -45,7 +45,10 @@
       <div id="main-content-container">
         <div id="main-content" role="main">
           
-  <p>namespace Animation</p>
+  <section id="animation">
+<h1>Animation<a class="headerlink" href="#animation" title="Link to this heading">¶</a></h1>
+<p>namespace Animation</p>
+</section>
 <section id="methods">
 <h1>Methods:<a class="headerlink" href="#methods" title="Link to this heading">¶</a></h1>
 <section id="animation-preload">
@@ -53,7 +56,7 @@
 <section id="declaration">
 <h3>Declaration<a class="headerlink" href="#declaration" title="Link to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">static</span> <span class="pre">void</span> <span class="pre">Animation.Preload(name)</span></code></p>
-<p>loads [[ScriptDoc/Config/File Formats/Animations|.animation]] file located at <code class="docutils literal notranslate"><span class="pre">resources/animations/name.animation</span></code> into memory. This calls [[ScriptDoc/Namespaces/Image|Image.Preload()]] on all animation frames.</p>
+<p>loads [[ScriptDoc/Config/File Formats/Animations|.animation]] file located at <code class="docutils literal notranslate"><span class="pre">resources/animations/name.animation</span></code> into memory. This calls [[image|Image.Preload()]] on all animation frames.</p>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- TODO: Write this</span>
 </pre></div>
 </div>
@@ -75,7 +78,7 @@
 <section id="id2">
 <h3>Declaration<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">static</span> <span class="pre">void</span> <span class="pre">Animation.Unload(name)</span></code></p>
-<p>Unloads the [[ScriptDoc/Config/File Formats/Animations|animation]] located at <code class="docutils literal notranslate"><span class="pre">resources/animations/name.animation</span></code>, freeing its memory. This calls [[ScriptDoc/Namespaces/Image|Image.Unload()]] on all animation frames.</p>
+<p>Unloads the [[ScriptDoc/Config/File Formats/Animations|animation]] located at <code class="docutils literal notranslate"><span class="pre">resources/animations/name.animation</span></code>, freeing its memory. This calls [[image|Image.Unload()]] on all animation frames.</p>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- TODO: Write this</span>
 </pre></div>
 </div>
@@ -108,12 +111,26 @@
 <li class="toctree-l1"><a class="reference internal" href="../../get_started.html">Get Started</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Scripting Documentation</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../scripting_doc.html">Lua Scripting</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Classes.html">Classes</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../file_structure.html">File Structure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../scripting_doc.html">Lua Scripting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../lifecycle_functions.html">Lifecycle Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../namespaces.html">Namespaces</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="actor.html">Actor</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods">Methods:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="application.html">Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="application.html#methods">Methods:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug.html">Debug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug.html#methods">Methods:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="image.html">Image</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../file_structure.html">File Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes.html">Classes</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
    -->
@@ -121,9 +138,24 @@
 <li class="toctree-l1"><a class="reference internal" href="../../get_started.html">Get Started</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Scripting Documentation</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../scripting_doc.html">Lua Scripting</a></li>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../file_structure.html">File Structure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../scripting_doc.html">Lua Scripting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../lifecycle_functions.html">Lifecycle Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../namespaces.html">Namespaces</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="actor.html">Actor</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods">Methods:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="application.html">Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="application.html#methods">Methods:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug.html">Debug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug.html#methods">Methods:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="image.html">Image</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../classes.html">Classes</a></li>
+</ul>
+</li>
 </ul>
 
 
@@ -142,7 +174,7 @@
             
                 <li class="footer-element">
                     
-                        <a href="../../_sources/ScriptDoc/Namespaces/Animation.md.txt" rel="nofollow"> source</a>
+                        <a href="../../_sources/ScriptDoc/Namespaces/animation.md.txt" rel="nofollow"> source</a>
                     
                 </li>
             

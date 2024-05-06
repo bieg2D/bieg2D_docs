@@ -47,20 +47,115 @@
           
   <section id="lua-scripting">
 <h1>Lua Scripting<a class="headerlink" href="#lua-scripting" title="Link to this heading">¶</a></h1>
-<section id="lifecycle-functions">
-<h2>[[Lifecycle Functions]]<a class="headerlink" href="#lifecycle-functions" title="Link to this heading">¶</a></h2>
-</section>
-<section id="namespaces">
-<h2>[[Namespaces]]<a class="headerlink" href="#namespaces" title="Link to this heading">¶</a></h2>
-</section>
-<section id="classes">
-<h2>[[Classes]]<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Classes.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lifecycle_functions.html">Lifecycle Functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lifecycle_functions.html#onstart">OnStart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lifecycle_functions.html#onupdate">OnUpdate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lifecycle_functions.html#onlateupdate">OnLateUpdate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lifecycle_functions.html#ondestroy">OnDestroy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="namespaces.html">Namespaces</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Namespaces/actor.html">Actor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/actor.html#methods">Methods:</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/actor.html#actor-find">Actor.Find</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Namespaces/actor.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/actor.html#actor-findall">Actor.FindAll</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Namespaces/actor.html#id1">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/actor.html#actor-instantiate">Actor.Instantiate</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Namespaces/actor.html#id2">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/actor.html#actor-destroy">Actor.Destroy</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Namespaces/actor.html#id3">Declaration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Namespaces/animation.html">Animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Namespaces/animation.html#methods">Methods:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/animation.html#animation-preload">Animation.Preload</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/animation.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/animation.html#animation-preloadall">Animation.PreloadAll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/animation.html#id1">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/animation.html#animation-unload">Animation.Unload</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/animation.html#id2">Declaration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Namespaces/application.html">Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Namespaces/application.html#methods">Methods:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/application.html#application-quit">Application.Quit</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/application.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/application.html#application-sleep">Application.Sleep</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/application.html#id1">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/application.html#application-openurl">Application.OpenURL</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/application.html#id2">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/application.html#application-getframe">Application.GetFrame</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/application.html#id3">Declaration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Namespaces/debug.html">Debug</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Namespaces/debug.html#methods">Methods:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/debug.html#debug-log">Debug.Log</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/debug.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/debug.html#debug-logerror">Debug.LogError</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/debug.html#id1">Declaration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Namespaces/image.html">Image</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/image.html#methods">Methods:</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/image.html#preload">Preload</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Namespaces/image.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/image.html#image-preloadall">Image.PreloadAll</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Namespaces/image.html#id1">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/image.html#image-unload">Image.Unload</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Namespaces/image.html#id2">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Namespaces/image.html#image-drawui">Image.DrawUI</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Namespaces/image.html#id3">Declaration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="classes.html">Classes</a><ul class="simple">
+</ul>
+</li>
 </ul>
 </div>
-</section>
 </section>
 
 
@@ -89,11 +184,25 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Scripting Documentation</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="file_structure.html">File Structure</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Lua Scripting</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Classes.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lifecycle_functions.html">Lifecycle Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespaces.html">Namespaces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/actor.html">Actor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/animation.html">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/animation.html#methods">Methods:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/application.html">Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/application.html#methods">Methods:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/debug.html">Debug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/debug.html#methods">Methods:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Namespaces/image.html">Image</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="file_structure.html">File Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes.html">Classes</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
    -->
@@ -102,11 +211,13 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Scripting Documentation</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="file_structure.html">File Structure</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Lua Scripting</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Classes.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lifecycle_functions.html">Lifecycle Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespaces.html">Namespaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes.html">Classes</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="file_structure.html">File Structure</a></li>
 </ul>
 
 

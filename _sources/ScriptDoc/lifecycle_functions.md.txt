@@ -1,0 +1,5 @@
+# Lifecycle Functions
+## OnStart
+## OnUpdate
+## OnLateUpdate
+## OnDestroy

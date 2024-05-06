@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 /* import futura font */
 @font-face {
   font-family: 'Futura';
@@ -71,7 +72,7 @@ body {
 @media screen and (max-width: 880px) {
   /* for narriw windows and mobile */
   body {
-    background: inherit;
+    background: #251f27;
   }
 }
 
@@ -141,9 +142,9 @@ ul ul {
 }
 
 pre {
-  font-family: "Inconsolata", monospace;
-  background-color: inherit;
-  color: #bebebe;
+  font-family: "Source Code Pro", monospace;
+  background-color: #1a171b;
+  color: #e5cbe2;
   padding: 2em;
   margin-bottom: 1em;
   overflow-x: auto;
@@ -169,7 +170,7 @@ table th, table td {
 }
 
 table tbody tr:nth-of-type(odd) {
-  background-color: #3d3d3d;
+  background-color: #332638;
   color: #bebebe;
 }
 
@@ -181,14 +182,14 @@ pre code {
 code {
   max-width: 100%;
   padding: 2px;
-  font-family: "Inconsolata", monospace;
-  background-color: #3d3d3d;
-  color: #bebebe;
+  font-family: "Source Code Pro", monospace;
+  background-color: #1a171b;
+  color: #e5cbe2;
 }
 
 table tbody tr:nth-of-type(odd) code {
-  background-color: #303030;
-  color: #bebebe;
+  background-color: #1a171b;
+  color: #e5cbe2;
 }
 
 #insegel-container {
@@ -471,7 +472,7 @@ footer ul#build-details li:not(:last-child):after {
 #search-results ul.search .context {
   margin-top: 1em;
   white-space: pre-line;
-  background-color: #3d3d3d;
+  background-color: #362a3b;
   color: #bebebe;
   padding: 2em;
 }
@@ -486,7 +487,7 @@ dl:not(.docutils) dd dl {
   margin-bottom: 1em;
 }
 dl:not(.docutils) dt {
-  background: #303030;
+  background: #271d2b;
   color: #bebebe;
   padding: 0.5em;
   padding-right: 0.75em;
@@ -497,18 +498,18 @@ dl:not(.docutils) dt .property {
   margin-right: 0.5em;
 }
 dl:not(.docutils) dt code {
-  background: #303030;
+  background: #332638;
   color: #bebebe;
   font-weight: bold;
   padding: 0px;
 }
 dl:not(.docutils) dl dt {
-  background: #3d3d3d;
+  background: #332638;
   color: #bebebe;
   border-left: 0.25em solid #2D2D2D;
 }
 dl:not(.docutils) dl dt code {
-  background: #3d3d3d;
+  background: #332638;
   color: #bebebe;
 }
 

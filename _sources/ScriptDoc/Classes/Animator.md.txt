@@ -13,7 +13,7 @@ enabled (boolean)
 # Methods:
 ## Lifecycle Functions
 ### OnStart
-[[ScriptDoc/Namespaces/Animation|Preloads]] default animation
+[[ScriptDoc/Namespaces/animation|Preloads]] default animation
 ### OnUpdate
 ### OnDestroy
 

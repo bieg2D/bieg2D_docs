@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#2D2D2D" />
   
-  <title>bieg2D :: Methods:</title>
+  <title>bieg2D :: Image</title>
   
 
   <link rel="icon" type="image/png" sizes="32x32" href="../../_static/img/favicon-32x32.png">
@@ -45,13 +45,15 @@
       <div id="main-content-container">
         <div id="main-content" role="main">
           
-  <p>namespace Image</p>
+  <section id="image">
+<h1>Image<a class="headerlink" href="#image" title="Link to this heading">¶</a></h1>
+<p>namespace Image</p>
 <section id="methods">
-<h1>Methods:<a class="headerlink" href="#methods" title="Link to this heading">¶</a></h1>
-<section id="image-preload">
-<h2>Image.Preload<a class="headerlink" href="#image-preload" title="Link to this heading">¶</a></h2>
+<h2>Methods:<a class="headerlink" href="#methods" title="Link to this heading">¶</a></h2>
+<section id="preload">
+<h3>Preload<a class="headerlink" href="#preload" title="Link to this heading">¶</a></h3>
 <section id="declaration">
-<h3>Declaration<a class="headerlink" href="#declaration" title="Link to this heading">¶</a></h3>
+<h4>Declaration<a class="headerlink" href="#declaration" title="Link to this heading">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">static</span> <span class="pre">void</span> <span class="pre">Image.Preload(name)</span></code></p>
 <p>loads .png file located at <code class="docutils literal notranslate"><span class="pre">resources/images/name.png</span></code> into memory. If an image has not been manually preloaded,</p>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="n">OnStart</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
@@ -66,9 +68,9 @@
 </section>
 </section>
 <section id="image-preloadall">
-<h2>Image.PreloadAll<a class="headerlink" href="#image-preloadall" title="Link to this heading">¶</a></h2>
+<h3>Image.PreloadAll<a class="headerlink" href="#image-preloadall" title="Link to this heading">¶</a></h3>
 <section id="id1">
-<h3>Declaration<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<h4>Declaration<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">static</span> <span class="pre">void</span> <span class="pre">Image.PreloadAll()</span></code></p>
 <p>Loads all .png files located in the directory <code class="docutils literal notranslate"><span class="pre">resources/images/</span></code> into memory using Preload().</p>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="n">OnStart</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
@@ -84,9 +86,9 @@
 </section>
 </section>
 <section id="image-unload">
-<h2>Image.Unload<a class="headerlink" href="#image-unload" title="Link to this heading">¶</a></h2>
+<h3>Image.Unload<a class="headerlink" href="#image-unload" title="Link to this heading">¶</a></h3>
 <section id="id2">
-<h3>Declaration<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<h4>Declaration<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">static</span> <span class="pre">void</span> <span class="pre">Image.Unload(name)</span></code></p>
 <p>Unloads the image located at <code class="docutils literal notranslate"><span class="pre">resources/images/name.png</span></code>, freeing its memory. The image must be re loaded to be used again.</p>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="n">sprite</span> <span class="o">=</span> <span class="s2">&quot;player&quot;</span>
@@ -103,9 +105,9 @@
 </section>
 </section>
 <section id="image-drawui">
-<h2>Image.DrawUI<a class="headerlink" href="#image-drawui" title="Link to this heading">¶</a></h2>
+<h3>Image.DrawUI<a class="headerlink" href="#image-drawui" title="Link to this heading">¶</a></h3>
 <section id="id3">
-<h3>Declaration<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<h4>Declaration<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">static</span> <span class="pre">void</span> <span class="pre">Image.DrawUI(name,</span> <span class="pre">x,</span> <span class="pre">y)</span></code></p>
 <p>Draws
 Loads the image, if it is not currently loaded.</p>
@@ -119,6 +121,7 @@ Loads the image, if it is not currently loaded.</p>
 <span class="kr">end</span>
 </pre></div>
 </div>
+</section>
 </section>
 </section>
 </section>
@@ -148,12 +151,26 @@ Loads the image, if it is not currently loaded.</p>
 <li class="toctree-l1"><a class="reference internal" href="../../get_started.html">Get Started</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Scripting Documentation</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../scripting_doc.html">Lua Scripting</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Classes.html">Classes</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../file_structure.html">File Structure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../scripting_doc.html">Lua Scripting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../lifecycle_functions.html">Lifecycle Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../namespaces.html">Namespaces</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="actor.html">Actor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="animation.html">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="animation.html#methods">Methods:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="application.html">Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="application.html#methods">Methods:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug.html">Debug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug.html#methods">Methods:</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Image</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../file_structure.html">File Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes.html">Classes</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
    -->
@@ -161,9 +178,24 @@ Loads the image, if it is not currently loaded.</p>
 <li class="toctree-l1"><a class="reference internal" href="../../get_started.html">Get Started</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Scripting Documentation</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../scripting_doc.html">Lua Scripting</a></li>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../file_structure.html">File Structure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../scripting_doc.html">Lua Scripting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../lifecycle_functions.html">Lifecycle Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../namespaces.html">Namespaces</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="actor.html">Actor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="animation.html">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="animation.html#methods">Methods:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="application.html">Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="application.html#methods">Methods:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug.html">Debug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug.html#methods">Methods:</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Image</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../classes.html">Classes</a></li>
+</ul>
+</li>
 </ul>
 
 
@@ -182,7 +214,7 @@ Loads the image, if it is not currently loaded.</p>
             
                 <li class="footer-element">
                     
-                        <a href="../../_sources/ScriptDoc/Namespaces/Image.md.txt" rel="nofollow"> source</a>
+                        <a href="../../_sources/ScriptDoc/Namespaces/image.md.txt" rel="nofollow"> source</a>
                     
                 </li>
             

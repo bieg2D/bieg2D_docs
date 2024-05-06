@@ -1,8 +1,7 @@
 # Lua Scripting
-### [[Lifecycle Functions]]
-### [[Namespaces]]
-### [[Classes]]
 
 ```{toctree}
-/ScriptDoc/Classes.md
+/ScriptDoc/lifecycle_functions.md
+/ScriptDoc/namespaces.md
+/ScriptDoc/classes.md
 ```
