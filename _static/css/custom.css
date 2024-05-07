@@ -33,6 +33,22 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+#table-of-contents {
+  padding: 0.5em;
+  border: 1px solid #bebebe;
+}
+
+p.topic-title {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  padding-left: 0.5em;
+}
+
+.related {
+  font-size: 15px;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -143,8 +159,9 @@ ul ul {
 
 pre {
   font-family: "Source Code Pro", monospace;
+  font-size: 18px;
   background-color: #1a171b;
-  color: #e5cbe2;
+  color: #a2a2a2;
   padding: 2em;
   margin-bottom: 1em;
   overflow-x: auto;
@@ -183,6 +200,7 @@ code {
   max-width: 100%;
   padding: 2px;
   font-family: "Source Code Pro", monospace;
+  font-size: 18px;
   background-color: #1a171b;
   color: #e5cbe2;
 }
@@ -514,6 +532,7 @@ dl:not(.docutils) dl dt code {
 }
 
 .c {
+  color: #a2a2a2;
   font-style: italic;
 }
 
@@ -524,21 +543,25 @@ dl:not(.docutils) dl dt code {
 
 /* Error */
 .k {
-  font-weight: bold;
+  /* font-weight: bold; */
+  color: #d4abde;
 }
 
 /* Keyword */
 .cm {
+  color: #a2a2a2;
   font-style: italic;
 }
 
 /* Comment.Multiline */
 .c1 {
+  color: #a2a2a2;
   font-style: italic;
 }
 
 /* Comment.Single */
 .cs {
+  color: #a2a2a2;
   font-style: italic;
 }
 
@@ -574,7 +597,8 @@ dl:not(.docutils) dl dt code {
 
 /* Keyword.Constant */
 .kd {
-  font-weight: bold;
+  color: #ad9dee;
+  font-weight: normal;
 }
 
 /* Keyword.Declaration */
@@ -584,15 +608,22 @@ dl:not(.docutils) dl dt code {
 
 /* Keyword.Namespace */
 .kr {
-  font-weight: bold;
+  color: #ad9dee;
+  font-weight: normal;
 }
 
 /* Keyword.Reserved */
 .s {
-  font-style: italic;
+  color: #e5cbe2;
+  font-style: normal;
 }
 
 /* Literal.String */
+
+.n {
+  color: #e5cbe2;
+}
+
 .nc {
   font-weight: bold;
 }
@@ -639,7 +670,8 @@ dl:not(.docutils) dl dt code {
 
 /* Literal.String.Doc */
 .s2 {
-  font-style: italic;
+  color: #ffa2a2;
+  font-style: normal;
 }
 
 /* Literal.String.Double */
@@ -676,8 +708,15 @@ dl:not(.docutils) dl dt code {
 
 /* Literal.String.Single */
 .ss {
-  font-style: italic;
+  color: #ff90f2;
+  font-style: normal;
 }
+
+.mb { color: #5397c5 } /* Literal.Number.Bin */
+.mf { color: #5397c5 } /* Literal.Number.Float */
+.mh { color: #5397c5 } /* Literal.Number.Hex */
+.mi { color: #5397c5 } /* Literal.Number.Integer */
+.mo { color: #5397c5 } /* Literal.Number.Oct */
 
 /* Literal.String.Symbol */
 

@@ -42,19 +42,41 @@
 
     <div id="content-container">
 
-      <div id="main-content-container">
+      <div id="main-content-container">        
         <div id="main-content" role="main">
+          <div class="related" role="navigation" aria-label="related navigation">
+            <ul style="display: flex; gap: 5px; padding: 0px;">
+                <div class="nav-item nav-item-1"><a href="../scripting_doc.html" >Lua Scripting > </a></div>
+                <div class="nav-item nav-item-2"><a href="../namespaces.html" accesskey="U">Namespaces > </a></div>
+              <!-- <li class="nav-item nav-item-this"><a href="">Animation</a></li> --> 
+            </ul>
+          </div>
           
   <section id="animation">
-<h1>Animation<a class="headerlink" href="#animation" title="Link to this heading">¶</a></h1>
+<h1><a class="toc-backref" href="#id3" role="doc-backlink">Animation</a><a class="headerlink" href="#animation" title="Link to this heading">¶</a></h1>
 <p>namespace Animation</p>
-</section>
+<nav class="contents" id="table-of-contents">
+<p class="topic-title">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#animation" id="id3">Animation</a></p>
+<ul>
+<li><p><a class="reference internal" href="#methods" id="id4">Methods:</a></p>
+<ul>
+<li><p><a class="reference internal" href="#animation-preload" id="id5">Animation.Preload</a></p></li>
+<li><p><a class="reference internal" href="#animation-preloadall" id="id6">Animation.PreloadAll</a></p></li>
+<li><p><a class="reference internal" href="#animation-unload" id="id7">Animation.Unload</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
 <section id="methods">
-<h1>Methods:<a class="headerlink" href="#methods" title="Link to this heading">¶</a></h1>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Methods:</a><a class="headerlink" href="#methods" title="Link to this heading">¶</a></h2>
 <section id="animation-preload">
-<h2>Animation.Preload<a class="headerlink" href="#animation-preload" title="Link to this heading">¶</a></h2>
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Animation.Preload</a><a class="headerlink" href="#animation-preload" title="Link to this heading">¶</a></h3>
 <section id="declaration">
-<h3>Declaration<a class="headerlink" href="#declaration" title="Link to this heading">¶</a></h3>
+<h4>Declaration<a class="headerlink" href="#declaration" title="Link to this heading">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">static</span> <span class="pre">void</span> <span class="pre">Animation.Preload(name)</span></code></p>
 <p>loads [[ScriptDoc/Config/File Formats/Animations|.animation]] file located at <code class="docutils literal notranslate"><span class="pre">resources/animations/name.animation</span></code> into memory. This calls [[image|Image.Preload()]] on all animation frames.</p>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- TODO: Write this</span>
@@ -63,9 +85,9 @@
 </section>
 </section>
 <section id="animation-preloadall">
-<h2>Animation.PreloadAll<a class="headerlink" href="#animation-preloadall" title="Link to this heading">¶</a></h2>
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Animation.PreloadAll</a><a class="headerlink" href="#animation-preloadall" title="Link to this heading">¶</a></h3>
 <section id="id1">
-<h3>Declaration<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<h4>Declaration<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">static</span> <span class="pre">void</span> <span class="pre">Animation.PreloadAll()</span></code></p>
 <p>Loads all [[ScriptDoc/Config/File Formats/Animations|.animation]] files located in the directory <code class="docutils literal notranslate"><span class="pre">resources/animations/</span></code> into memory using Preload().</p>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- TODO: Write this</span>
@@ -74,14 +96,15 @@
 </section>
 </section>
 <section id="animation-unload">
-<h2>Animation.Unload<a class="headerlink" href="#animation-unload" title="Link to this heading">¶</a></h2>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Animation.Unload</a><a class="headerlink" href="#animation-unload" title="Link to this heading">¶</a></h3>
 <section id="id2">
-<h3>Declaration<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<h4>Declaration<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">static</span> <span class="pre">void</span> <span class="pre">Animation.Unload(name)</span></code></p>
 <p>Unloads the [[ScriptDoc/Config/File Formats/Animations|animation]] located at <code class="docutils literal notranslate"><span class="pre">resources/animations/name.animation</span></code>, freeing its memory. This calls [[image|Image.Unload()]] on all animation frames.</p>
 <div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- TODO: Write this</span>
 </pre></div>
 </div>
+</section>
 </section>
 </section>
 </section>
@@ -118,11 +141,8 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../namespaces.html">Namespaces</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="actor.html">Actor</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Animation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#methods">Methods:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="application.html">Application</a></li>
-<li class="toctree-l3"><a class="reference internal" href="application.html#methods">Methods:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug.html">Debug</a></li>
-<li class="toctree-l3"><a class="reference internal" href="debug.html#methods">Methods:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="image.html">Image</a></li>
 </ul>
 </li>
@@ -145,11 +165,8 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../namespaces.html">Namespaces</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="actor.html">Actor</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Animation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#methods">Methods:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="application.html">Application</a></li>
-<li class="toctree-l3"><a class="reference internal" href="application.html#methods">Methods:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="debug.html">Debug</a></li>
-<li class="toctree-l3"><a class="reference internal" href="debug.html#methods">Methods:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="image.html">Image</a></li>
 </ul>
 </li>

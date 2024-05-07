@@ -1,9 +1,11 @@
 # Application
 namespace Application
-
-# Methods:
-## Application.Quit
-### Declaration
+```{contents} Table of Contents
+:depth: 3
+```
+## Methods:
+### Application.Quit
+#### Declaration
 `static void Application.Quit()`
 
 Quits the game immediately.
@@ -13,8 +15,8 @@ if self.quit_selected then
 	Application.Quit()
 end
 ```
-## Application.Sleep
-### Declaration
+### Application.Sleep
+#### Declaration
 `static void Application.Sleep(int milliseconds)`
 
 Suspends the application for a number of milliseconds.
@@ -23,8 +25,8 @@ if self.sleepy_time then
 	Application.Sleep(10)
 end
 ```
-## Application.OpenURL
-### Declaration
+### Application.OpenURL
+#### Declaration
 `static void Application.OpenURL(string url)`
 
 Opens specified URL in user's default browser.
@@ -33,8 +35,8 @@ if user_destination == self.portfolio then
 	Application.OpenURL(niemway.github.io)
 end
 ```
-## Application.GetFrame
-### Declaration
+### Application.GetFrame
+#### Declaration
 `static int Application.GetFrame()`
 
 Returns the number of frames elapsed since the game launched. (Game begins on frame 0)

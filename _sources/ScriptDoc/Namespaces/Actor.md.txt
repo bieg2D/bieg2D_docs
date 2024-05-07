@@ -4,7 +4,6 @@ namespace Actor
 ```{contents} Table of Contents
 :depth: 3
 ```
-
 ## Methods:
 ### Actor.Find
 #### Declaration
@@ -12,7 +11,7 @@ namespace Actor
 
 Returns first actor with name `name`. Actors are sorted by the order in which they were loaded.
 If no actors with matching name are loaded, returns nil.
-```python
+```lua
 -- finds first actor with given name and adds upwards velocity
 bounce_actor = function(name)
 	local found_actor = Actor.Find(name)

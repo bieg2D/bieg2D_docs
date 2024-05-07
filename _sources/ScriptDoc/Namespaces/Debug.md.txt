@@ -1,9 +1,11 @@
 # Debug
 namespace Debug
-
-# Methods:
-## Debug.Log
-### Declaration
+```{contents} Table of Contents
+:depth: 3
+```
+## Methods:
+### Debug.Log
+#### Declaration
 `static void Debug.Log(string)`
 
 Writes a message to standard output.
@@ -12,8 +14,8 @@ speak_message = function(message)
 	Debug.Log(message .. "!")
 end
 ```
-## Debug.LogError
-### Declaration
+### Debug.LogError
+#### Declaration
 `static void Debug.LogError(string)`
 
 Writes a message to standard error output

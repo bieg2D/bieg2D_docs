@@ -1,6 +1,5 @@
 # Classes
 ```{toctree}
-/ScriptDoc/Classes/
 ```
 [[vec2]]
 [[Vector2]]
