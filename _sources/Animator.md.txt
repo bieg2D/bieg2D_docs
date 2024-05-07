@@ -1,6 +1,0 @@
-C++ - powered component
-
-member variables:
-public:
-float frames_per_second
-string idle_animation
