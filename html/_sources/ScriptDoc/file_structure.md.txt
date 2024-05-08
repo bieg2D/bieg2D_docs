@@ -1,2 +1,21 @@
 # File Structure
-hello
+```{contents} Table of Contents
+```
+<br>It is suggested to distribute your game in the form of a .zip file that contains the bieg2D engine and resources folder at the root directory.<br>When users unzip your game, the resulting folder should look like this:
+```
+name_of_your_game.zip
+| game_engine
+| resources/
+```
+## bieg2D
+Your `bieg2D` app should be in the root directory alongside your `resources/` folder.
+
+## resources/
+{doc}`/ScriptDoc/Config/game.config`<br>{doc}`/ScriptDoc/Config/rendering.config`
+### actor_templates/
+### animations/
+### audio/
+### component_types/
+### fonts/
+### images/
+### scenes/

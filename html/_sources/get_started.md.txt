@@ -1,7 +1,26 @@
 # Get Started
-[[Engine Overview]]
+```{contents} Table of Contents
+:depth: 3
+```
 
-[[Example Projects]]
+## Engine Overview
+### Making A Game
+### Running Your Game
+Make sure your {doc}`ScriptDoc/file_structure` is correctly organized, with your `bieg2D` app next to your `resources` folder.
+#### MacOS
+Open the folder containing the engine and `resources` in your terminal, and run it with `./game_engine`.
+```
+> ls
+> game_engine             resources
+> ./game_engine
+```
+#### Windows
 
-[[Resources]]
+#### Linux
+I don't know how linux works (coming soon!)
+
+## Example Projects
+coming soon
+
+## Resources
 

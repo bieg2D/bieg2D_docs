@@ -1,3 +1,4 @@
+# game.config
 `game_title` (string)
 
 

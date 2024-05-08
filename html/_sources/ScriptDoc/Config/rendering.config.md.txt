@@ -1,3 +1,4 @@
+# rendering.config
 `x_resolution` (int)
 `y_resolution` (int)
 x, y dimensions of the game window.

@@ -369,13 +369,26 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
   font-weight: 300;
 }
 
+.doc {
+  text-decoration: underline;
+}
+
 .admonition {
-  padding: 2em;
+  border-radius: 15px;
+  padding: 0;
   margin-bottom: 2em;
-  background-color: #202020;
+  background-color: #1a171b;
   color: #bebebe;
 }
+.admonition p {
+  padding: 0.5em;
+  padding-left: 1em;
+}
 .admonition .admonition-title {
+  border-radius: 15px;
+  margin: 0;
+  padding: 0.5em;
+  padding-left: 1em;
   font-weight: 500;
 }
 .admonition.warning, .admonition.caution, .admonition.danger, .admonition.error {
@@ -385,6 +398,12 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
 .admonition.attention, .admonition.important {
   background-color: #45af94;
   color: #2D2D2D;
+}
+
+.admonition.note .admonition-title {
+  background-color: #2d3f45;
+  color: #bebebe;
+  font-weight: 500;
 }
 
 .injected {
