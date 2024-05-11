@@ -1,0 +1,6 @@
+# game.config
+
+## Required Properties
+`game_title` (string)
+`initial_scene` (string)
+## Optional Properties

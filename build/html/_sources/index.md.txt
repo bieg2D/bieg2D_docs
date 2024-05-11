@@ -1,0 +1,29 @@
+![bieg](_static/bieg_logo_light_small.png)
+
+Welcome to the bieg2D documentation!
+This is a simple C++ - powered engine, designed for developer ease of use. It's free, open-source, and works on Windows, macOS, and Linux!
+
+The engine is licensed under the zlib/libpng license, which means it's free to use for personal and commercial purposes. No limitations!
+
+{doc}`get_started`
+
+[[Download Here!]]
+
+[Engine Source](https://github.com/niemway/bieg2D)
+
+```{toctree}
+:hidden:
+/get_started.md
+```
+```{toctree}
+:hidden:
+:caption: Configuration
+ScriptDoc/Config/game.config.md
+ScriptDoc/Config/rendering.config.md
+```
+```{toctree}
+:hidden:
+:caption: Scripting Documentation
+ScriptDoc/file_structure.md
+ScriptDoc/scripting_doc.md
+```

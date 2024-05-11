@@ -1,0 +1,28 @@
+# Get Started
+```{contents} Table of Contents
+:depth: 3
+```
+
+## Engine Overview
+### Making A Game
+### Running Your Game
+Make sure your {doc}`ScriptDoc/file_structure` is correctly organized, with your `bieg2D` app next to your `resources` folder.
+#### MacOS
+Open the folder containing the engine and `resources` in your terminal, and run it with `./game_engine`.
+```
+$ ls
+game_engine             resources
+$ ./game_engine
+```
+#### Windows
+
+#### Linux
+I don't know how linux works (coming soon!)
+
+## Example Projects
+coming soon
+
+## Resources
+### Tutorials
+### Game Asset Resources
+— Creative Commons —<br>[Open Game Art](https://opengameart.org/art-search-advanced?keys=&field_art_type_tid%5B%5D=9&sort_by=count&sort_order=DESC) - A huge collection of CC art, designed to be used in games!<br>[Kenney](https://www.kenney.nl) - Smooth, polished CC assets with a consistent but recognizable style<br>[freesound.org](https://freesound.org) - Huge library of free / CC sound recordings and effects!<br>— Other —<br>[itch.io](https://itch.io/game-assets) - Huge collection of free and paid game asset packs!<br>[2-Minute Tabletop](https://2minutetabletop.com) - 2D assets designed for top-down map views (free options)

@@ -1,0 +1,44 @@
+# Application
+```{contents} Table of Contents
+:depth: 3
+```
+## Methods:
+### Quit
+`Application.Quit()`
+
+Quits the game immediately.
+:::{note}
+The game does **not** wait until the end of the current frame to quit.<br>If there is additional necessary code execution, (i.e. writing save data), call this on the next frame.
+:::
+```lua
+if self.quit_selected then
+	Application.Quit()
+end
+```
+### Sleep
+`Application.Sleep(milliseconds)`
+
+Suspends the application for a number of milliseconds (integer).
+```lua
+if self.sleepy_time then
+	Application.Sleep(10)
+end
+```
+### OpenURL
+`Application.OpenURL(url)`
+
+Opens specified URL (string) in user's default browser.
+```lua
+if user_destination == self.portfolio then
+	Application.OpenURL(niemway.github.io)
+end
+```
+### GetFrame
+`Application.GetFrame()`
+
+Returns the number of frames elapsed since the game launched. (Game begins on frame 0)
+```lua
+ReportError = function(error)
+	Debug.LogError(error .. " occurred on frame " .. Application.GetFrame())
+end
+```
