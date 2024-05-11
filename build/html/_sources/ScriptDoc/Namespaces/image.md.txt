@@ -1,5 +1,4 @@
 # Image
-namespace Image
 ```{contents} Table of Contents
 :depth: 3
 ```

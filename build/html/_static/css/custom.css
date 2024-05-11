@@ -127,6 +127,14 @@ a:hover:not(.headerlink) {
   border-bottom: 2px solid #bebebe;
 }
 
+a.reference {
+  color: #e5cbe2;
+}
+
+/* .doc {
+  color: #d4abde;
+} */
+
 p {
   margin-bottom: 1em;
 }
@@ -185,7 +193,8 @@ table thead th {
 }
 
 table th, table td {
-  padding: 0.5em;
+  padding: 0;
+  padding-left: 0.5em;
 }
 
 table tbody tr:nth-of-type(odd) {
@@ -367,10 +376,6 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
 #search input[type=text]::placeholder {
   color: #bebebe;
   font-weight: 300;
-}
-
-.doc {
-  text-decoration: underline;
 }
 
 .admonition {

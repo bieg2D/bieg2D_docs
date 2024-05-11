@@ -8,6 +8,9 @@ Below is a list of all built-in engine namespaces available to Lua scripting.
 /ScriptDoc/Namespaces/application.md
 /ScriptDoc/Namespaces/debug.md
 /ScriptDoc/Namespaces/image.md
+/ScriptDoc/Namespaces/input.md
+
+
 ```
 
 |                                               |                                         |
