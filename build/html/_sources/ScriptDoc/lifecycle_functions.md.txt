@@ -1,5 +1,24 @@
 # Lifecycle Functions
 ## OnStart
+Called before the component's first frame update (i.e. at the start of the game or as soon as the component has been created)
+OnStarts are processed at the beginning of every frame, before any other lifecycle functions are processed.
+```lua
+OnStart = function(self)
+	self.rb = self:GetComponent("Rigidbody")
+end
+```
 ## OnUpdate
+Called every frame.
+:::{tip}
+Actor updates are processed **in the order that they are created**, and the actor's components are processed **alphabetically by component key**.
+:::
+```lua
+OnUpdate = function(self)
+	if self.rb:GetPosition().x >= 100
+		Debug.Log("You win the race!")
+		Application.Quit()
+	end
+end
+```
 ## OnLateUpdate
 ## OnDestroy
