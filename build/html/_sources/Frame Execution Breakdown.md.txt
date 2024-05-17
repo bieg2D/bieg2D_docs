@@ -1,0 +1,37 @@
+# Input Update
+- Checks input state and collects any SDL events
+- Updates state of keys 
+# Load Scene
+- If a scene load has been requested, the engine will load it now (before updating any actors in the old scene)
+# Actors Update
+:::{note}
+Actors are updated in the order that they are created (top to bottom in scenes). Components within actors are updated alphabetically by key.
+:::
+## Actor Start
+## Actor Update
+## Actor LateUpdate
+## Process Add and Remove Actors
+:::{warning}
+Note that actor removals ( Destroy() ) are processed __after__ additions.
+This means that if an actor is added and removed in a frame, it **will not** be added to the scene and exist in the next frame. (Although this shouldn't be possible, since Destroy() requires a reference, if you find a way to add, remove, then add the same actor know that it won't persist.)
+:::
+### Process Add Actor Requests
+- Add any actors that were Instantiated this frame to the scene
+### Process Remove Actor Requests
+# Event Bus Update
+# Advance Physics Step
+# Render
+- Processes all draw calls made throughout the frame, and renders them to the frame buffer
+## Update Scale
+- If the render scale has changed during the frame, the engine will process that before any draw calls have been rendered.
+## Render DrawImage()
+## Render DrawUI()
+## Render DrawText()
+## Render DrawPixel()
+# Input LateUpdate
+- End-of-frame updates for key input states
+- Removes "this frame" states
+- GetKeyDown -> GetKey
+- GetKeyUp -> nothing
+# Draw Frame Buffer
+- Draws the frame buffer to the screen

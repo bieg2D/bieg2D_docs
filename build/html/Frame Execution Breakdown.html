@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2D2D2D" />
+  
+  <title>bieg2D :: Input Update</title>
+  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="_static/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="_static/img/favicon-16x16.png">
+  <link rel="index" title="Index" href="genindex.html"/>
+
+  <link rel="stylesheet" href="_static/css/insegel.css"/>
+  <link rel="stylesheet" href="_static/css/custom.css"/>
+
+  <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+      <script type="text/javascript" src="_static/documentation_options.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+  
+
+  <script src="https://email.tl.fortawesome.com/c/eJxNjUEOgyAQAF8jR7Kw6wIHDh7sP1Cw2mgxgmn6-3JsMqc5zEQfE8dkxOY1KKMUOI3ACFKRJpSW2AAp7ontYIaxI6i7XPJVwyeVfCQ550Os3jLrGSNOLgbdAy6s0PBk2TFNjEbsfq31LB0OnX407pJa5v2faRadwSW63mn5KuLyR9j2tgx3zecanl-55R_-jjPs"></script> 
+</head>
+
+<body>
+  <div id="insegel-container">
+    <header>
+      <div id="logo-container">
+          
+          <a href="index.html"><img src="_static/bieg_logo_light_small.png"></a>
+          
+      </div>
+      <div id="project-container">
+        
+        <h1>bieg2D Documentation</h1>
+        
+      </div>
+    </header>
+
+    <div id="content-container">
+
+      <div id="main-content-container">        
+        <div id="main-content" role="main">
+          <div class="related" role="navigation" aria-label="related navigation">
+            <ul style="display: flex; gap: 5px; padding: 0px;">
+              <!-- <li class="nav-item nav-item-this"><a href="">Input Update</a></li> --> 
+            </ul>
+          </div>
+          
+  <section id="input-update">
+<h1>Input Update<a class="headerlink" href="#input-update" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>Checks input state and collects any SDL events</p></li>
+<li><p>Updates state of keys</p></li>
+</ul>
+</section>
+<section id="load-scene">
+<h1>Load Scene<a class="headerlink" href="#load-scene" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>If a scene load has been requested, the engine will load it now (before updating any actors in the old scene)</p></li>
+</ul>
+</section>
+<section id="actors-update">
+<h1>Actors Update<a class="headerlink" href="#actors-update" title="Link to this heading">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Actors are updated in the order that they are created (top to bottom in scenes). Components within actors are updated alphabetically by key.</p>
+</div>
+<section id="actor-start">
+<h2>Actor Start<a class="headerlink" href="#actor-start" title="Link to this heading">¶</a></h2>
+</section>
+<section id="actor-update">
+<h2>Actor Update<a class="headerlink" href="#actor-update" title="Link to this heading">¶</a></h2>
+</section>
+<section id="actor-lateupdate">
+<h2>Actor LateUpdate<a class="headerlink" href="#actor-lateupdate" title="Link to this heading">¶</a></h2>
+</section>
+<section id="process-add-and-remove-actors">
+<h2>Process Add and Remove Actors<a class="headerlink" href="#process-add-and-remove-actors" title="Link to this heading">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Note that actor removals ( Destroy() ) are processed <strong>after</strong> additions.
+This means that if an actor is added and removed in a frame, it <strong>will not</strong> be added to the scene and exist in the next frame. (Although this shouldn’t be possible, since Destroy() requires a reference, if you find a way to add, remove, then add the same actor know that it won’t persist.)</p>
+</div>
+<section id="process-add-actor-requests">
+<h3>Process Add Actor Requests<a class="headerlink" href="#process-add-actor-requests" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Add any actors that were Instantiated this frame to the scene</p></li>
+</ul>
+</section>
+<section id="process-remove-actor-requests">
+<h3>Process Remove Actor Requests<a class="headerlink" href="#process-remove-actor-requests" title="Link to this heading">¶</a></h3>
+</section>
+</section>
+</section>
+<section id="event-bus-update">
+<h1>Event Bus Update<a class="headerlink" href="#event-bus-update" title="Link to this heading">¶</a></h1>
+</section>
+<section id="advance-physics-step">
+<h1>Advance Physics Step<a class="headerlink" href="#advance-physics-step" title="Link to this heading">¶</a></h1>
+</section>
+<section id="render">
+<h1>Render<a class="headerlink" href="#render" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>Processes all draw calls made throughout the frame, and renders them to the frame buffer</p></li>
+</ul>
+<section id="update-scale">
+<h2>Update Scale<a class="headerlink" href="#update-scale" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>If the render scale has changed during the frame, the engine will process that before any draw calls have been rendered.</p></li>
+</ul>
+</section>
+<section id="render-drawimage">
+<h2>Render DrawImage()<a class="headerlink" href="#render-drawimage" title="Link to this heading">¶</a></h2>
+</section>
+<section id="render-drawui">
+<h2>Render DrawUI()<a class="headerlink" href="#render-drawui" title="Link to this heading">¶</a></h2>
+</section>
+<section id="render-drawtext">
+<h2>Render DrawText()<a class="headerlink" href="#render-drawtext" title="Link to this heading">¶</a></h2>
+</section>
+<section id="render-drawpixel">
+<h2>Render DrawPixel()<a class="headerlink" href="#render-drawpixel" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+<section id="input-lateupdate">
+<h1>Input LateUpdate<a class="headerlink" href="#input-lateupdate" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>End-of-frame updates for key input states</p></li>
+<li><p>Removes “this frame” states</p></li>
+<li><p>GetKeyDown -&gt; GetKey</p></li>
+<li><p>GetKeyUp -&gt; nothing</p></li>
+</ul>
+</section>
+<section id="draw-frame-buffer">
+<h1>Draw Frame Buffer<a class="headerlink" href="#draw-frame-buffer" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>Draws the frame buffer to the screen</p></li>
+</ul>
+</section>
+
+
+        </div>
+      </div>
+
+      <div id="side-menu-container">
+
+        <div id="search" role="search">
+        <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+            <input type="text" name="q" placeholder="Search..." />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+        </form>
+</div>
+
+        <div id="side-menu" role="navigation">
+
+          
+  
+    
+  
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="get_started.html">Get Started</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ScriptDoc/Config/game.config.html">game.config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ScriptDoc/Config/rendering.config.html">rendering.config</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Scripting Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ScriptDoc/file_structure.html">File Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ScriptDoc/scripting_doc.html">Lua Scripting</a></li>
+</ul>
+
+
+
+        </div>
+
+        
+
+      </div>
+
+    </div>
+
+<footer>
+    <div id="footer-info">
+        <ul id="build-details">
+            
+                <li class="footer-element">
+                    
+                        <a href="_sources/Frame Execution Breakdown.md.txt" rel="nofollow"> source</a>
+                    
+                </li>
+            
+
+            
+
+            
+        </ul>
+
+        
+            <div id="copyright">
+                &copy; 2024, Nicholas Way
+            </div>
+        
+
+        <div id="credit">
+            created with <a href="http://sphinx-doc.org/">Sphinx</a> and <a href="https://github.com/Autophagy/insegel">Insegel</a>
+
+        </div>
+    </div>
+
+    <a id="menu-toggle" class="fa fa-bars" aria-hidden="true"></a>
+
+    <script type="text/javascript">
+      $("#menu-toggle").click(function() {
+        $("#menu-toggle").toggleClass("toggled");
+        $("#side-menu-container").slideToggle(300);
+      });
+    </script>
+
+</footer> 
+
+</div>
+
+</body>
+</html>

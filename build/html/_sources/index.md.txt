@@ -27,3 +27,8 @@ ScriptDoc/Config/rendering.config.md
 ScriptDoc/file_structure.md
 ScriptDoc/scripting_doc.md
 ```
+```{toctree}
+:hidden:
+:caption: Engine Details
+EngineDetails/frame_exec_breakdown.md
+```

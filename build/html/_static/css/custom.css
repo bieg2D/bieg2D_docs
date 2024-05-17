@@ -110,6 +110,7 @@ h2 {
 
 h3 {
   font-size: 1.35em;
+  padding-left: 0.5em;
 }
 
 a {
@@ -400,9 +401,20 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
   background-color: #a23f3f;
   color: #2D2D2D;
 }
-.admonition.attention, .admonition.important {
+.admonition.important {
   background-color: #45af94;
   color: #2D2D2D;
+}
+
+.admonition.attention {
+  background-color: #1a171b;
+  color: #bebebe;
+}
+
+.admonition.attention .admonition-title {
+  background-color: #5a3714;
+  color: #bebebe;
+  font-weight: 500;
 }
 
 .admonition.note .admonition-title {

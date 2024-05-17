@@ -9,7 +9,7 @@ end
 ```
 ## OnUpdate
 Called every frame.
-:::{tip}
+:::{note}
 Actor updates are processed **in the order that they are created**, and the actor's components are processed **alphabetically by component key**.
 :::
 ```lua
