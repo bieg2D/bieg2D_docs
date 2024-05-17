@@ -6,61 +6,41 @@
 ### GetKey
 `Image.GetKey(key)`
 
-loads .png file located at `resources/images/name.png` into memory. If an image has not been manually preloaded, 
+Returns true if the specified key is currently held down.
 ```lua
-OnStart = function(self)
-	Image.Preload(self.sprite)
-end
-
-OnUpdate = function(self) -- doesn't need to load on draw call
-	Image.Draw(self.sprite, self.x, self.y)
-end
-```
-### PreloadAll
-`static void Image.PreloadAll()`
-
-Loads all .png files located in the directory `resources/images/` into memory using Preload().
-```lua
-OnStart = function(self)
-	Image.PreloadAll()
-end
-
-OnUpdate = function(self) -- doesn't need to load on either draw call
-	Image.Draw(self.sprite, self.x, self.y)
-	Image.DrawUI(self.heart, 20, 20)
-end
-```
-### Unload
-`Image.Unload(name)`
-
-Unloads the image located at `resources/images/name.png`, freeing its memory. The image must be re loaded to be used again.
-```lua
-sprite = "player"
-
 OnUpdate = function(self)
-	-- loads player.png
-	Image.Draw(self.sprite, self.x, self.y)
-	Image.Unload(self.sprite)
-	-- loads player.png again
-	Image.DrawUI(self.sprite, 0, 0)
+	if Input.GetKey("up") then
+		self.rigidbody:SetVelocity(0, -1)
+	end
 end
 ```
-### DrawUI
-`Image.DrawUI(name, x, y)`
+### GetKeyDown
+`Image.GetKeyDown(key)`
 
-Draws
-Loads the image, if it is not currently loaded.
+Returns true if the specified key was pressed during this frame.
 ```lua
-OnStart = function(self)
-	Image.PreloadAll()
-end
-
-OnUpdate = function(self) -- doesn't need to load on either draw call
-	Image.Draw(self.sprite, self.x, self.y)
-	Image.DrawUI(self.heart, 20, 20)
+OnUpdate = function(self)
+	if Input.GetKeyDown("space") then
+		self:Jump() -- shouldn't call every frame space is held
+	end
 end
 ```
+### GetKeyUp
+`Input.GetKeyUp(key)`
 
+Returns true if the specified key was released during this frame
+```lua
+OnUpdate = function(self)
+	if Input.GetKeyDown("j") then
+		self.attack_charging = true
+	end
+	if Input.GetKeyUp("j") then -- user stops holding button
+		self.attack_charging = false
+		self:Attack()
+	end
+	self:UpdateAttackCharge() -- checks if attack_charging
+end
+```
 ## Keys
 ### Directional (Arrow) Keys
 
